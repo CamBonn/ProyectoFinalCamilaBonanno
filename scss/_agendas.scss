@@ -1,0 +1,25 @@
+.agendas {
+  border: solid 2px;
+  width: 400px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+margin-bottom: 10px;
+  &:hover{
+    transform: scale(1.05);
+    transition: 1s;
+  }
+  .agendas-1 {
+    width: 100%;
+  }
+  .agendas-texto1 {
+    font-family: "Caveat", cursive;
+  }
+  .agendas-texto2 {
+    font-family: "Caveat", cursive;
+    font-size: 190%;
+  }
+  .agendas-sinopsis1 {
+    font-family: "Crimson Text", serif;
+  }
+}

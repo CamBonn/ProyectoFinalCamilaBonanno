@@ -1,0 +1,169 @@
+$fuente-titulos: "Caveat";
+$fuente-encabezado: "Crimson Text", serif;
+
+.formulario {
+  background-color: white;
+
+  .formulario_titulo {
+    text-align: center;
+    font-family: "Caveat", cursive;
+    font-size: 250%;
+  }
+  .formulario_datos {
+    font-family: "Crimson Text", serif;
+    margin: 5px;
+    .modificacion {
+      display: inline;
+      margin-right: 5px;
+    }
+    .modificacion1 {
+      display: inline;
+      margin-left: 100px;
+      margin-right: 5px;
+    }
+  }
+}
+/* ANIMACIONES ENVIOS */
+@keyframes empresas {
+  0% {
+    opacity: 0;
+    width: 20px;
+  }
+  100% {
+    opacity: 1;
+    width: 32, 5%;
+  }
+}
+@keyframes efecto-texto {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.aclaraciones {
+  border: 2px solid;
+  margin-bottom: 20px;
+  .aclaraciones_titulo {
+    text-align: center;
+    font-family: $fuente-titulos;
+    font-size: 250%;
+  }
+  .aclaraciones_texto {
+    text-align: center;
+    font-family: $fuente-encabezado;
+    font-size: 120%;
+    animation-name: efecto-texto;
+    animation-duration: 4s;
+  }
+  .aclaraciones_foto {
+    height: 300px;
+    width: 300px;
+    margin-bottom: 10px;
+    margin-left: 3px;
+    animation-name: empresas;
+    animation-duration: 3s;
+  }
+}
+.terminos {
+  border-top: 2px solid;
+  .terminos_titulo {
+    text-align: center;
+    font-family: $fuente-titulos;
+    font-size: 300%;
+  }
+  .terminos_text {
+    text-align: justify;
+    font-family: $fuente-encabezado;
+    font-size: 100%;
+    animation-name: efecto-texto;
+    animation-duration: 4s;
+  }
+}
+
+/* NOSOTROS */
+@keyframes efecto_libreria {
+  0% {
+    opacity: 0;
+    width: 20px;
+  }
+  100% {
+    opacity: 1;
+    width: 75%;
+  }
+}
+@keyframes efecto_texto {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.libreria {
+  border: 3px solid;
+  margin-bottom: 10px;
+  padding: 10px;
+  .libreria_titulo {
+    font-family: $fuente-titulos;
+    text-align: center;
+    font-size: 250%;
+  }
+  .libreria_acomodar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "caja1 caja2"
+      "caja3 caja4";
+
+    .libreria_foto1 {
+      height: 500px;
+      border: 1px solid;
+      margin: 10px;
+      grid-area: caja1;
+      animation-name: efecto_libreria;
+      animation-duration: 3s;
+    }
+    .libreria_texto1 {
+      font-family: $fuente-encabezado;
+      font-size: larger;
+      grid-area: caja2;
+      animation-name: efecto_texto;
+      animation-duration: 4s;
+    }
+
+    .libreria_texto {
+      font-family: $fuente-encabezado;
+      font-size: larger;
+      grid-area: caja3;
+      animation-name: efecto_texto;
+      animation-duration: 4s;
+    }
+    .libreria_foto {
+      height: 500px;
+      border: 1px solid;
+      margin: 10px;
+      grid-area: caja4;
+      animation-name: efecto_libreria;
+      animation-duration: 3s;
+    }
+  }
+}
+.contacto {
+  .contacto_info {
+    font-size: 300%;
+    font-family: $fuente-encabezado;
+  }
+}
+.mapa {
+  border: 2px solid;
+  background-color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  .mapa_1{
+    height: 600px;
+    width: 910px;
+
+  }
+}

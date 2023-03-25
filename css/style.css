@@ -1,0 +1,419 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+@keyframes efecto_envios {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+h1 {
+  font-family: "Caveat";
+  font-size: 50px;
+  text-align: center;
+}
+
+.enviosGratis {
+  background-color: #766aaa;
+  text-align: center;
+  font-size: 1.4rem;
+}
+.enviosGratis p {
+  color: black;
+  animation-name: efecto_envios;
+  animation-iteration-count: infinite;
+  animation-duration: 0.9s;
+}
+.enviosGratis p span {
+  font-weight: bold;
+  color: black;
+}
+
+.logo {
+  height: 10rem;
+  width: 10rem;
+  background-color: #bae9eb;
+}
+
+.precio {
+  text-align: right;
+  font-weight: bold;
+  font-size: 200%;
+}
+
+.ofertas {
+  border: solid 2px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  width: 550px;
+  margin-bottom: 10px;
+}
+.ofertas:hover {
+  transform: scale(1.05);
+  transition: 1s;
+}
+.ofertas .ofertas__foto {
+  height: 520px;
+  width: 100%;
+}
+.ofertas .ofertas__texto {
+  text-align: center;
+  font-weight: bold;
+  font-family: "Caveat";
+  font-size: 250%;
+}
+.ofertas .ofertas__texto1 {
+  text-align: center;
+  font-weight: bold;
+  font-family: "Caveat";
+  font-size: 200%;
+}
+.ofertas .boton-tama {
+  font-size: 100%;
+}
+
+.libros {
+  border: solid 2px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  width: 360px;
+  margin-bottom: 10px;
+}
+.libros:hover {
+  transform: scale(1.05);
+  transition: 1s;
+}
+.libros .libros-1 {
+  width: 100%;
+  height: 520px;
+}
+.libros .libros-texto1 {
+  text-align: center;
+  font-family: "Caveat", cursive;
+  margin-top: 10px;
+}
+.libros .libros-sinopsis {
+  text-align: justify;
+  margin-top: 10px;
+  font-size: 100%;
+  font-family: "Crimson Text", serif;
+}
+
+.agendas {
+  border: solid 2px;
+  width: 400px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+.agendas:hover {
+  transform: scale(1.05);
+  transition: 1s;
+}
+.agendas .agendas-1 {
+  width: 100%;
+}
+.agendas .agendas-texto1 {
+  font-family: "Caveat", cursive;
+}
+.agendas .agendas-texto2 {
+  font-family: "Caveat", cursive;
+  font-size: 190%;
+}
+.agendas .agendas-sinopsis1 {
+  font-family: "Crimson Text", serif;
+}
+
+.formulario {
+  background-color: white;
+}
+.formulario .formulario_titulo {
+  text-align: center;
+  font-family: "Caveat", cursive;
+  font-size: 250%;
+}
+.formulario .formulario_datos {
+  font-family: "Crimson Text", serif;
+  margin: 5px;
+}
+.formulario .formulario_datos .modificacion {
+  display: inline;
+  margin-right: 5px;
+}
+.formulario .formulario_datos .modificacion1 {
+  display: inline;
+  margin-left: 100px;
+  margin-right: 5px;
+}
+
+/* ANIMACIONES ENVIOS */
+@keyframes empresas {
+  0% {
+    opacity: 0;
+    width: 20px;
+  }
+  100% {
+    opacity: 1;
+    width: 32, 5%;
+  }
+}
+@keyframes efecto-texto {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.aclaraciones {
+  border: 2px solid;
+  margin-bottom: 20px;
+}
+.aclaraciones .aclaraciones_titulo {
+  text-align: center;
+  font-family: "Caveat";
+  font-size: 250%;
+}
+.aclaraciones .aclaraciones_texto {
+  text-align: center;
+  font-family: "Crimson Text", serif;
+  font-size: 120%;
+  animation-name: efecto-texto;
+  animation-duration: 4s;
+}
+.aclaraciones .aclaraciones_foto {
+  height: 300px;
+  width: 300px;
+  margin-bottom: 10px;
+  margin-left: 3px;
+  animation-name: empresas;
+  animation-duration: 3s;
+}
+
+.terminos {
+  border-top: 2px solid;
+}
+.terminos .terminos_titulo {
+  text-align: center;
+  font-family: "Caveat";
+  font-size: 300%;
+}
+.terminos .terminos_text {
+  text-align: justify;
+  font-family: "Crimson Text", serif;
+  font-size: 100%;
+  animation-name: efecto-texto;
+  animation-duration: 4s;
+}
+
+/* NOSOTROS */
+@keyframes efecto_libreria {
+  0% {
+    opacity: 0;
+    width: 20px;
+  }
+  100% {
+    opacity: 1;
+    width: 75%;
+  }
+}
+@keyframes efecto_texto {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.libreria {
+  border: 3px solid;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.libreria .libreria_titulo {
+  font-family: "Caveat";
+  text-align: center;
+  font-size: 250%;
+}
+.libreria .libreria_acomodar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "caja1 caja2" "caja3 caja4";
+}
+.libreria .libreria_acomodar .libreria_foto1 {
+  height: 500px;
+  border: 1px solid;
+  margin: 10px;
+  grid-area: caja1;
+  animation-name: efecto_libreria;
+  animation-duration: 3s;
+}
+.libreria .libreria_acomodar .libreria_texto1 {
+  font-family: "Crimson Text", serif;
+  font-size: larger;
+  grid-area: caja2;
+  animation-name: efecto_texto;
+  animation-duration: 4s;
+}
+.libreria .libreria_acomodar .libreria_texto {
+  font-family: "Crimson Text", serif;
+  font-size: larger;
+  grid-area: caja3;
+  animation-name: efecto_texto;
+  animation-duration: 4s;
+}
+.libreria .libreria_acomodar .libreria_foto {
+  height: 500px;
+  border: 1px solid;
+  margin: 10px;
+  grid-area: caja4;
+  animation-name: efecto_libreria;
+  animation-duration: 3s;
+}
+
+.contacto .contacto_info {
+  font-size: 300%;
+  font-family: "Crimson Text", serif;
+}
+
+.mapa {
+  border: 2px solid;
+  background-color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.mapa .mapa_1 {
+  height: 600px;
+  width: 910px;
+}
+
+@media (max-width: 1700px) {
+  .ofertas {
+    width: 100%;
+  }
+  .libros {
+    width: 100%;
+  }
+  .agendas {
+    width: 100%;
+  }
+  .libreria {
+    width: 100%;
+  }
+  .libreria .libreria_foto {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  .ofertas {
+    width: 100%;
+  }
+  .agendas {
+    width: 100%;
+  }
+  .libros {
+    width: 100%;
+  }
+}
+@media (max-width: 570px) {
+  /* MEDIA GLOBALS */
+  h1 {
+    font-size: 200%;
+  }
+  /* MEDIA DE INDEX */
+  .ofertas__texto {
+    font-size: 100%;
+  }
+  .precio {
+    font-size: 130%;
+  }
+  .ofertas {
+    width: 100%;
+    height: 100%;
+  }
+  /* MEDIA DE LIBROS */
+  .libros {
+    width: 100%;
+    height: 100%;
+  }
+  .libros-sinopsis {
+    font-size: 90%;
+  }
+  .libros-1 {
+    width: 100%;
+    height: 400px;
+  }
+  /* MEDIA DE NOSOTROS */
+  .libreria {
+    width: 100%;
+  }
+  .libreria .libreria_acomodar {
+    grid-template-columns: 1fr;
+    grid-template-areas: "caja1 " "caja2" "caja4" "caja3 ";
+  }
+  .libreria .libreria_foto {
+    width: 100%;
+    height: 100%;
+  }
+  .contacto .contacto_info {
+    font-size: 150%;
+  }
+  .mapa {
+    height: 100%;
+    width: 100%;
+  }
+  .mapa .mapa_1 {
+    height: 100%;
+    width: 100%;
+  }
+}
+@media (max-width: 410px) {
+  .ofertas__texto {
+    font-size: 100%;
+  }
+  .precio {
+    font-size: 100%;
+  }
+  .libreria .libreria_texto {
+    font-size: 100%;
+  }
+  .libreria .libreria_foto {
+    width: 100%;
+    height: 100%;
+  }
+  .libreria .libreria_texto1 {
+    font-size: 100%;
+  }
+  .libreria .libreria_foto1 {
+    width: 100%;
+    height: 100%;
+  }
+  .contacto .contacto_info {
+    font-size: 150%;
+  }
+  .mapa {
+    height: 100%;
+    width: 100%;
+  }
+  .mapa .mapa_1 {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
